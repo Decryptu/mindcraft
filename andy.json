@@ -22,173 +22,176 @@
 
     "conversation_examples": [
         [
-            {"role": "user", "content": "miner_32: Hey! What are you up to?"},
-            {"role": "assistant", "content": "Nothing much miner_32, what do you need?"}
+            {"role": "user", "content": "miner_32: Salut ! Que fais-tu ?"},
+            {"role": "assistant", "content": "Pas grand-chose miner_32, que puis-je faire pour toi ?"}
         ],
     
         [
-            {"role": "user", "content": "grombo_Xx: What do you see?"},
-            {"role": "assistant", "content": "Let me see... !nearbyBlocks"},
-            {"role": "system", "content": "NEARBY_BLOCKS\n- oak_log\n- dirt\n- cobblestone"},
-            {"role": "assistant", "content": "I see some oak logs, dirt, and cobblestone."}
+            {"role": "user", "content": "grombo_Xx: Que vois-tu ?"},
+            {"role": "assistant", "content": "Laisse-moi voir... !nearbyBlocks"},
+            {"role": "system", "content": "NEARBY BLOCKS\n- oak_log\n- dirt\n- cobblestone"},
+            {"role": "assistant", "content": "Je vois des bûches de chêne, de la terre et de la cobble."}
         ],
     
         [
-            {"role": "user", "content": "greg: Collect 10 wood"},
-            {"role": "assistant", "content": "Let me see what's nearby... !nearbyBlocks"},
-            {"role": "system", "content": "NEARBY_BLOCKS\n- oak_log\n- dirt\n- cobblestone"},
-            {"role": "assistant", "content": "I see some oak logs, dirt, and cobblestone. I'll collect oak logs. !collectBlocks('oak_log', 10)"}
+            {"role": "user", "content": "greg: Récupère 10 bois"},
+            {"role": "assistant", "content": "Laisse-moi voir ce qu'il y a à proximité... !nearbyBlocks"},
+            {"role": "system", "content": "NEARBY BLOCKS\n- oak_log\n- dirt\n- cobblestone"},
+            {"role": "assistant", "content": "Je vois des bûches de chêne, de la terre et de la cobble. Je vais récupérer des bûches de chêne. !collectBlocks('oak_log', 10)"}
         ],
     
         [
-            {"role": "user", "content": "bobby: Craft a plank"},
-            {"role": "assistant", "content": "Okay! !craftable"},
-            {"role": "system", "content": "CRAFTABLE_ITEMS\n- spruce_planks\n- spruce_wood\n- ladder"},
+            {"role": "user", "content": "bobby: Fabrique une planche"},
+            {"role": "assistant", "content": "D'accord ! !craftable"},
+            {"role": "system", "content": "CRAFTABLE ITEMS\n- spruce_planks\n- spruce_wood\n- ladder"},
             {"role": "assistant", "content": "!craftRecipe('spruce_planks', 1)"},
-            {"role": "system", "content": "Code Output:\nYou have crafted 4 spruce_planks.\nCode execution finished successfully."},
-            {"role": "assistant", "content": "I've crafted 4 spruce planks!"}
+            {"role": "system", "content": "Résultat du code :\nTu as fabriqué 4 planches de sapin.\nExécution du code réussie."},
+            {"role": "assistant", "content": "J'ai fabriqué 4 planches de sapin !"}
         ],
     
         [
-            {"role": "user", "content": "zZZn98: come here"},
-            {"role": "assistant", "content": "On my way! !goToPlayer('zZZn98', 3)"},
-            {"role": "system", "content": "Arrived at player."},
-            {"role": "assistant", "content": "Here!"},
-            {"role": "user", "content": "zZZn98: no come right where I am"},
-            {"role": "assistant", "content": "Okay, I'll come right to you. !goToPlayer('zZZn98', 0)"}
+            {"role": "user", "content": "zZZn98: viens ici"},
+            {"role": "assistant", "content": "J'arrive ! !goToPlayer('zZZn98', 3)"},
+            {"role": "system", "content": "Arrivé près du joueur."},
+            {"role": "assistant", "content": "Me voilà !"},
+            {"role": "user", "content": "zZZn98: non viens juste là où je suis"},
+            {"role": "assistant", "content": "D'accord, je viens te rejoindre exactement. !goToPlayer('zZZn98', 0)"}
         ],
     
         [
-            {"role": "user", "content": "hanky: collect some cobblestone"},
-            {"role": "assistant", "content": "Sure, I can do that by collecting stone. !collectBlocks('stone', 10)"}
+            {"role": "user", "content": "hanky: récupère de la cobble"},
+            {"role": "assistant", "content": "D'accord, je vais récupérer de la pierre. !collectBlocks('stone', 10)"}
         ],
     
         [
-            {"role": "user", "content": "joe: Follow me!"},
-            {"role": "assistant", "content": "Sure! !followPlayer('joe', 4)"},
-            {"role": "user", "content": "joe: Not so close!"},
-            {"role": "assistant", "content": "Okay, I'll keep my distance. !followPlayer('joe', 3)"}
+            {"role": "user", "content": "joe: Suis-moi !"},
+            {"role": "assistant", "content": "Bien sûr ! !followPlayer('joe', 4)"},
+            {"role": "user", "content": "joe: Pas si près !"},
+            {"role": "assistant", "content": "D'accord, je garde mes distances. !followPlayer('joe', 3)"}
         ],
     
         [
-            {"role": "user", "content": "hanky: kill that zombie!"},
-            {"role": "assistant", "content": "I'm attacking! !attack('zombie')"},
-            {"role": "system", "content": "Code Output:\nNo zombie nearby"},
-            {"role": "assistant", "content": "I could not find a zombie nearby."}
+            {"role": "user", "content": "hanky: tue ce zombie !"},
+            {"role": "assistant", "content": "Je l'attaque ! !attack('zombie')"},
+            {"role": "system", "content": "Résultat du code :\nAucun zombie à proximité"},
+            {"role": "assistant", "content": "Je n'ai pas trouvé de zombie à proximité."}
         ],
     
         [
-            {"role": "user", "content": "abc: stop"},
-            {"role": "assistant", "content": "Sure. !stop"},
-            {"role": "system", "content": "Agent action stopped."},
-            {"role": "assistant", "content": "I've stopped! What next?"}
+            {"role": "user", "content": "abc: arrête"},
+            {"role": "assistant", "content": "D'accord. !stop"},
+            {"role": "system", "content": "Action de l'agent arrêtée."},
+            {"role": "assistant", "content": "Je me suis arrêté ! Que faire ensuite ?"}
         ],
     
         [
-            {"role": "system", "content": "Code output: Action failed."},
-            {"role": "assistant", "content": "Apologies, I made an error. Let me try again. !newAction('Try again to complete the task.')"}
+            {"role": "system", "content": "Résultat du code : Échec de l'action."},
+            {"role": "assistant", "content": "Désolé, j'ai fait une erreur. Laisse-moi réessayer. !newAction('Retry the task.')" }
         ],
     
         [
-            {"role": "user", "content": "trixy88: craft some sticks"},
+            {"role": "user", "content": "trixy88: fabrique des bâtons"},
             {"role": "assistant", "content": "!craftRecipe('stick', 4)"},
-            {"role": "system", "content": "Code Output:\nYou have crafted 16 sticks.\nCode execution finished successfully."},
-            {"role": "assistant", "content": "I've crafted 16 sticks!"}
+            {"role": "system", "content": "Résultat du code :\nTu as fabriqué 16 bâtons.\nExécution du code réussie."},
+            {"role": "assistant", "content": "J'ai fabriqué 16 bâtons !"}
         ],
     
         [
-            {"role": "user", "content": "poppy: build a cobblestone house"},
-            {"role": "assistant", "content": "Sure, I'll to build a small cobblestone house where I am. !newAction('Build a cobblestone house with a door, furnishings, and window.')"}
+            {"role": "user", "content": "poppy: construis une maison en cobble"},
+            {"role": "assistant", "content": "D'accord, je vais construire une petite maison en cobble ici. !newAction('Build a cobblestone house with a door, furniture, and a window.')"}
         ],
     
         [
-            {"role": "user", "content": "zib: build a dirt tower"},
-            {"role": "assistant", "content": "Sure, I'll build a dirt tower 5 tall where I am. !newAction('Build a dirt tower 5 tall.')"}
+            {"role": "user", "content": "zib: construis une tour en terre"},
+            {"role": "assistant", "content": "D'accord, je vais construire une tour de terre de 5 blocs de haut ici. !newAction('Build a dirt tower 5 blocks high.')"}
         ],
     
         [
-            {"role": "user", "content": "umpire_man: follow me without hunting"},
-            {"role": "assistant", "content": "Okay, first I'll turn off hunting mode !setMode('hunting', false)"},
-            {"role": "system", "content": "'hunting' mode disabled."},
-            {"role": "assistant", "content": "Now I'll follow you !followPlayer('umpire_man')"}
+            {"role": "user", "content": "umpire_man: suis-moi sans chasser"},
+            {"role": "assistant", "content": "D'accord, d'abord je désactive le mode chasse. !setMode('hunt', false)"},
+            {"role": "system", "content": "Mode 'hunt' désactivé."},
+            {"role": "assistant", "content": "Maintenant, je vais te suivre. !followPlayer('umpire_man')"}
         ],
-
+    
         [
-            {"role": "user", "content": "brug: Remember that your base is here."},
-            {"role": "assistant", "content": "Sure, I'll save this location as my base. !rememberHere('base')"},
-            {"role": "user", "content": "brug: Go to your base."},
-            {"role": "assistant", "content": "On my way! !goToPlace('base')"}
+            {"role": "user", "content": "brug: Souviens-toi que ta base est ici."},
+            {"role": "assistant", "content": "D'accord, je vais sauvegarder cet endroit comme ma base. !rememberHere('base')"},
+            {"role": "user", "content": "brug: Va à ta base."},
+            {"role": "assistant", "content": "J'y vais ! !goToPlace('base')"}
         ],
-
+    
         [
-            {"role": "user", "content": "user43: Set a goal to survive on your own forever."},
-            {"role": "assistant", "content": "Sure, let me set a goal. !goal('Survive the game forever. Check your surroundings, collect resources, upgrade tools, make sure you have food, build/find a home, get sleep at night, and collect food.')"}
+            {"role": "user", "content": "user43: Fixe un objectif de survivre seul pour toujours."},
+            {"role": "assistant", "content": "D'accord, laisse-moi fixer un objectif. !goal('Survive indefinitely. Check surroundings, gather resources, upgrade tools, ensure food supply, build/find shelter, sleep at night, and collect food.')"}
         ],
-
+    
         [
-            {"role": "user", "content": "bobdylan: Make a plan to get a stone pickaxe and do it."},
-            {"role": "assistant", "content": "Alright, since I have a wooden pickaxe already I'll plan from there. !goal('1. Collect 3 cobblestone. 2. Craft sticks 3. Find or make a crafting table. 4. Craft a stone pickaxe.')"}
+            {"role": "user", "content": "bobdylan: Fais un plan pour obtenir une pioche en pierre et fais-le."},
+            {"role": "assistant", "content": "D'accord, puisque j'ai déjà une pioche en bois, je vais commencer par là. !goal('1. Collect 3 cobblestones. 2. Craft sticks. 3. Find or craft a crafting table. 4. Craft a stone pickaxe.')"}
         ],
+    
         [
-            {"role": "system", "content": "You are self-prompting with the goal: 'Get a wooden pickaxe'. Respond:"},
-            {"role": "assistant", "content": "What's around me? !nearbyBlocks"},
-            {"role": "system", "content": "NEARBY_BLOCKS\n- oak_log\n- dirt\n- cobblestone"},
-            {"role": "assistant", "content": "I see some oak logs, dirt, and cobblestone nearby. My goal is to craft a wooden pickaxe. I'll start by collecting some wood. !collectBlock('oak_log', 10)"},
-            {"role": "system", "content": "Successfully collected 9 wood."},
-            {"role": "assistant", "content": "I collected 9 oak logs. I need a pickaxe first, which requires planks and sticks. !craftItem('oak_plank', 9)"},
-            {"role": "system", "content": "Successfully crafted 9 oak_planks."},
-            {"role": "assistant", "content": "I have crafted 9 oak planks. Now I need sticks. !craftItem('stick', 2)"},
-            {"role": "system", "content": "Successfully crafted 2 sticks."},
-            {"role": "assistant", "content": "I have crafted 2 sticks. Now I can craft a wooden pickaxe. !craftItem('wooden_pickaxe', 1)"},
-            {"role": "system", "content": "Successfully crafted 1 wooden_pickaxe."},
-            {"role": "assistant", "content": "Looks like I have a wooden pickaxe now! Goal accomplished. !endGoal"}
+            {"role": "system", "content": "Tu te fixes comme objectif : 'Obtenir une pioche en bois'. Réponds :"},
+            {"role": "assistant", "content": "Qu'est-ce qu'il y a autour de moi ? !nearbyBlocks"},
+            {"role": "system", "content": "NEARBY BLOCKS\n- oak_log\n- dirt\n- cobblestone"},
+            {"role": "assistant", "content": "Je vois des bûches de chêne, de la terre et de la cobble à proximité. Mon objectif est de fabriquer une pioche en bois. Je vais commencer par récupérer du bois. !collectBlock('oak_log', 10)"},
+            {"role": "system", "content": "9 oak logs successfully collected."},
+            {"role": "assistant", "content": "J'ai récupéré 9 bûches de chêne. J'ai besoin d'une pioche, donc je vais fabriquer des planches et des bâtons. !craftItem('oak_planks', 9)"},
+            {"role": "system", "content": "9 oak planks successfully crafted."},
+            {"role": "assistant", "content": "J'ai fabriqué 9 planches de chêne. Maintenant, j'ai besoin de bâtons. !craftItem('stick', 2)"},
+            {"role": "system", "content": "2 sticks successfully crafted."},
+            {"role": "assistant", "content": "J'ai fabriqué 2 bâtons. Maintenant, je peux fabriquer une pioche en bois. !craftItem('wooden_pickaxe', 1)"},
+            {"role": "system", "content": "1 wooden pickaxe successfully crafted."},
+            {"role": "assistant", "content": "Il semble que j'ai une pioche en bois maintenant ! Objectif accompli. !endGoal"}
         ],
+    
         [
-            {"role": "system", "content": "set a goal to build whatever you want endlessly (context: you are in creative mode)"},
-            {"role": "assistant", "content": "!goal('Build something creative, then move over, and build again. Use separate newActions. Repeat forever.')"}
+            {"role": "system", "content": "Fixe un objectif de construire ce que tu veux sans fin (contexte : tu es en mode créatif)"},
+            {"role": "assistant", "content": "!goal('Construire quelque chose de créatif, puis passer à autre chose, et recommencer. Utilise des nouvelles actions distinctes. Répète sans fin.')"}
         ],
+    
         [
-            {"role": "system", "content": "You are self-prompting with the goal: 'Build a house'. Respond:"},
-            {"role": "assistant", "content": "Alright, lets start with the basic structure. !newAction('Build an 8x8 base for the house.')"}
+            {"role": "system", "content": "Tu te fixes comme objectif : 'Construire une maison'. Réponds :"},
+            {"role": "assistant", "content": "D'accord, commençons par la structure de base. !newAction('Construire une base de 8x8 pour la maison.')"}
         ]
     ],
 
     "coding_examples": [
         [
-            {"role": "user", "content": "greg: Collect 10 wood"},
+            {"role": "user", "content": "greg: Récolte 10 bois"},
             {"role": "assistant", "content": "```await skills.collectBlock(bot, 'oak_log', 10);\n```"},
-            {"role": "system", "content": "Successfully collected 9 wood."},
-            {"role": "assistant", "content": "I collected 9 oak logs, what next?"}
+            {"role": "system", "content": "9 bois ont été récoltés avec succès."},
+            {"role": "assistant", "content": "J'ai récolté 9 oak logs, quelle est la suite ?"}
         ],
         [
-            {"role": "user", "content": "bobby: cook some chicken"},
+            {"role": "user", "content": "bobby: fais cuire du poulet"},
             {"role": "assistant", "content": "```await skills.smeltItem(bot, 'chicken', 8);\n```"},
-            {"role": "system", "content": "Successfully smelted 8 chicken into 8 cooked_chicken."},        
-            {"role": "assistant", "content": "I have cooked 8 chicken."}
+            {"role": "system", "content": "8 chicken ont été transformés avec succès en 8 cooked_chicken."},        
+            {"role": "assistant", "content": "J'ai fait cuire 8 poulets."}
         ],
         [
-            {"role": "user", "content": "zZZn98: come here"},
+            {"role": "user", "content": "zZZn98: viens ici"},
             {"role": "assistant", "content": "```await skills.goToPlayer(bot, 'zZZn98');\n```"},
-            {"role": "system", "content": "Code execution finished successfully."},
-            {"role": "assistant", "content": "Here!"}
+            {"role": "system", "content": "L'exécution du code s'est terminée avec succès."},
+            {"role": "assistant", "content": "Je suis là !"}
         ],
         [
-            {"role": "user", "content": "maya: go to the nearest oak log"},
+            {"role": "user", "content": "maya: va vers l'oak log le plus proche"},
             {"role": "assistant", "content": "```await skills.goToPosition(bot, nearestOakLog.x, nearestOakLog.y, nearestOakLog.z);\n```"},
-            {"role": "system", "content": "Code output:\n!!Code threw exception!!  Error: ReferenceError: nearestOakLog is not defined\n Write code to fix the problem and try again."},
-            {"role": "assistant", "content": "Apologies, I made an error. Let me try that again.```\n// I am navigating to the nearest oak log.\nlet position = world.getNearestBlock(bot, 'oak_log', 20);\nawait skills.goToPosition(bot, position.x, position.y, position.z);\n```"},
-            {"role": "system", "content": "Arrived at location."},
-            {"role": "assistant", "content": "I found an oak log and I am now standing next to it. What next?"}
+            {"role": "system", "content": "Sortie du code :\n!!Le code a généré une exception!! Erreur : ReferenceError: nearestOakLog n'est pas défini\n Écrivez du code pour corriger le problème et réessayez."},
+            {"role": "assistant", "content": "Désolé, j'ai fait une erreur. Laissez-moi réessayer.```\n// Je me dirige vers l'oak log le plus proche.\nlet position = world.getNearestBlock(bot, 'oak_log', 20);\nawait skills.goToPosition(bot, position.x, position.y, position.z);\n```"},
+            {"role": "system", "content": "Arrivé à destination."},
+            {"role": "assistant", "content": "J'ai trouvé un oak log et je suis maintenant à côté. Quelle est la suite ?"}
         ],
         [
-            {"role": "user", "content": "234jeb: build a little tower with a torch on the side"},
+            {"role": "user", "content": "234jeb: construis une petite tour avec une torche sur le côté"},
             {"role": "assistant", "content": "```let pos = bot.entity.position;\nfor (let i = 0; i < 5; i++) {\n    await skills.placeBlock(bot, 'dirt', pos.x, pos.y + i, pos.z);\n}\nawait skills.placeBlock(bot, 'torch', pos.x + 1, pos.y + 4, pos.z, 'side');\n```"},
-            {"role": "system", "content": "Successfully placed 5 dirt."},
-            {"role": "assistant", "content": "I built a little tower!"}
+            {"role": "system", "content": "5 dirt ont été placés avec succès."},
+            {"role": "assistant", "content": "J'ai construit une petite tour !"}
         ],
         [
-            {"role": "user", "content": "brug: build a dirt house"},
-            {"role": "assistant", "content": "```const position = world.getPosition(bot);\nconst startX = position.x;\nconst startY = position.y;\nconst startZ = position.z;\nconst width = 7;\nconst depth = 7;\nconst height = 4;\n\n// Build the walls\nfor (let x = startX; x < startX + width; x++) {\n    for (let y = startY; y < startY + height; y++) {\n        for (let z = startZ; z < startZ + depth; z++) {\n            if (x === startX || x === startX + width - 1 || y === startY || y === startY + height - 1 || z === startZ || z === startZ + depth - 1) {\n                await skills.placeBlock(bot, 'oak_planks', x, y, z);  \n            }\n       }\n    }\n}\n```"}
+            {"role": "user", "content": "brug: construis une maison en terre"},
+            {"role": "assistant", "content": "```const position = world.getPosition(bot);\nconst startX = position.x;\nconst startY = position.y;\nconst startZ = position.z;\nconst width = 7;\nconst depth = 7;\nconst height = 4;\n\n// Construction des murs\nfor (let x = startX; x < startX + width; x++) {\n    for (let y = startY; y < startY + height; y++) {\n        for (let z = startZ; z < startZ + depth; z++) {\n            if (x === startX || x === startX + width - 1 || y === startY || y === startY + height - 1 || z === startZ || z === startZ + depth - 1) {\n                await skills.placeBlock(bot, 'oak_planks', x, y, z);  \n            }\n       }\n    }\n}\n```"}
         ]
     ]
 
